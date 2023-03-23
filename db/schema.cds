@@ -7,3 +7,7 @@ entity Rooms {
     
 }
 
+entity Lectures {
+    key ID: Integer;
+}
+

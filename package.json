@@ -16,6 +16,8 @@
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.0",
     "prettier": "^2.8.6",
     "sqlite3": "^5.0.2",
     "ts-mocha": "^10.0.0"
@@ -23,8 +25,17 @@
   "scripts": {
     "start": "cds run",
     "lint": "eslint . --ext .ts",
+    "pre-commit": "npx lint-staged && npm run test",
     "build:entities": "npx cds2types --cds ./srv/service.cds --output ./srv/entities/ --prefix I",
-    "build:ts": "tsc"
+    "build:ts": "tsc",
+    "prepare": "husky install",
+    "test": "echo Testing Not Yet Implemented !!!"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint",
+      "prettier --check --config .prettierrc.json --write"
+    ]
   },
   "eslintConfig": {
     "extends": "eslint:recommended",

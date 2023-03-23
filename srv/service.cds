@@ -4,5 +4,5 @@ using { lectureschedule as my } from '../db/schema';
 service LectureService {
 
     entity Rooms as projection on my.Rooms;
-
+    entity Lectures as projection on my.Lectures;
 }

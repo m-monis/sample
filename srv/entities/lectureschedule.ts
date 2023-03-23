@@ -4,10 +4,16 @@ export interface IRooms {
     seats: number;
 }
 
+export interface ILectures {
+    ID: number;
+}
+
 export enum Entity {
-    Rooms = "lectureschedule.Rooms"
+    Rooms = "lectureschedule.Rooms",
+    Lectures = "lectureschedule.Lectures"
 }
 
 export enum SanitizedEntity {
-    Rooms = "Rooms"
+    Rooms = "Rooms",
+    Lectures = "Lectures"
 }
