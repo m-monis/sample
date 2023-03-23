@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/.git": true,
+    "**/.vscode": true
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  }
+}
