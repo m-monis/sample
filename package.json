@@ -61,5 +61,8 @@
       "no-console": "off",
       "require-atomic-updates": "off"
     }
-  }
+  },
+  "sapux": [
+    "app/com.sap.soapp"
+  ]
 }

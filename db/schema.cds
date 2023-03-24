@@ -1,13 +1,12 @@
-namespace lectureschedule;
+namespace db;
 
-entity Rooms {
-    key ID: Integer;
-    name: String(200);
-    seats: Integer;
-    
-}
-
-entity Lectures {
-    key ID: Integer;
+entity SalesOrders {
+    key soNumber: String   @title : 'Sales Order Number';
+    orderDate: Date    @title : 'Order Date';
+    customerName: String   @title : 'Customer Name';
+    customerNumber: String  @title : 'Customer Number';
+    poNumber: String   @title : 'PO Number';
+    inquiryNumber: String  @title : 'Inquiry Number';
+    totalOrderItems: Integer   @title : 'Total Sales Order';
 }
 

@@ -1,8 +1,7 @@
-using { lectureschedule as my } from '../db/schema';
+using { db } from '../db/schema';
 
-@path: 'service/lectureSchedule'
-service LectureService {
+@path: '/CatalogService'
+service CatalogService {
 
-    entity Rooms as projection on my.Rooms;
-    entity Lectures as projection on my.Lectures;
+    entity SalesOrders as projection on db.SalesOrders;
 }
